@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Translating ASL Fingerspelling</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="css/superslides.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="fontawesome/css/fontawesome.css">
+  <link rel="stylesheet" href="fontawesome/css/brands.css">
+  <link rel="stylesheet" href="fontawesome/css/solid.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <div class="loader">
+    <div class="inner">
+      <!-- loading icon here -->
+
+    </div>
+  </div>
+
+  <nav id="navigation" class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#"><em>Gompei Ninjas</em></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#introduction">Introduction <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#solution">Solution</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#procedure">Procedure</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#results">Results</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#challenges">Challenges</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#future">Future Work</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#conclusion">Conclusion</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#team">Team</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#references">References</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/MinhHangwpi/cs539_final_project"
+            target="_blank"><b>Github</b></a>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+
+  <div id="slides">
+
+    <div class="overlay"></div>
+
+    <div class="slides-container">
+      <img src="images/image1.jpg" alt="">
+      <img src="images/image2.jpg" alt="">
+      <img src="images/image3.jpg" alt="">
+    </div>
+
+    <div class="titleMessage">
+      <div class="heading">
+        <p class="main">Translating American Sign Language Fingerspelling</p>
+        <p class="sub typed"></p>
+      </div>
+    </div>
+
+    <nav class="slides-navigation">
+      <a href="#" class="next"></a>
+      <a href="#" class="prev"></a>
+    </nav>
+  </div>
+
+  <div id="introduction" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="heading">
+          <h2>Introduction</h2>
+        </div>
+        <p>An essential component of American Sign Language (ASL) is spelling a word out letter-by-letter, also known as
+          fingerspelling. Unfortunately, while voice recognition algorithms are very prevalent, an equivalent
+          gesture-to-text is still underdeveloped. Native signers would benefit greatly from such a technology as they
+          fingerspell on <a href="https://www.kaggle.com/competitions/asl-fingerspelling/overview">average 158% faster
+            than an average typer on a mobile device.</a> Over the Summer of 2023, <a
+            href”https://www.kaggle.com/competitions/asl-fingerspelling”>Google is hosting a Kaggle Competition</a> to
+          achieve such a task. We registered for the competition and we set out to solve this with machine learning.</p>
+
+        <p>The competition provides a dataset of phrases signed in ASL. Originally recorded as videos, they have been
+          normalized with <a href=”https://developers.google.com/mediapipe”>Mediapipes</a>, Google's body landmark
+          extraction algorithm. The data for each phrase is stored in a parquet file, and each row from the file
+          represents a "frame" from the video. All files are labeled with the expected phrase (the ground truth), which
+          allows a direct comparison with our results.</p>
+
+        <p>The body, hand, and face coordinates are extracted from the video frames and mapped with coordinates.</p>
+
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-md-4">
+              <video controls>
+                <source src="images/videos/scaleskuhaylah.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="col-md-4">
+              <video controls>
+                <source src="images/videos/scaleskuhaylah.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="col-md-4">
+              <video controls>
+                <source src="images/videos/1383 william lanier.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col ">
+              <div>"3 creek house"</div>
+            </div>
+            <div class="col">
+              <div>"scales/kuhaylah"</div>
+            </div>
+            <div class="col">
+              <div>"1383 william lanier"</div>
+            </div>
+          </div>
+        </div>
+        <p style="text-align:center;font-weight: bold;"><br>Three examples of phrases signed in the dataset.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="solution" class="skillsSection section">
+    <div class="container">
+      <div class="row">
+
+        <div class="heading">
+          <h2>Solution</h2>
+        </div>
+        <p>This is a problem well suited for deep learning because the data provided is a series of sequential frames
+          representing each phrase. We feel a type of Recurrent Neural Network (RNN) would be able to accomplish this,
+          specifically a Long-Short-Term-Memory (LSTM). This neural network would overcome the problem of vanishing
+          gradient descent that would otherwise occur in RNNs with the amount of frames we need to process.</p>
+
+        <p>
+          Our dataset is provided by the <a href="https://www.kaggle.com/c/asl-fingerspelling">Kaggle competition</a>. It is 189 gigabytes and comprises 123 parquet files. The
+          metadata that is included is the following:
+        <ol style="margin-left: 35px">
+          <li>A unique identifier for each data file</li>
+          <li>A unique identifier of each participant that contributed</li>
+          <li>A unique identifier for the landmark sequence, and there may be multiple in each data file</li>
+          <li>The phrase of what is being said (this makes it labeled data)</li>
+        </ol>
+        The train and test datasets contain randomly generated addresses, phone numbers, and urls derived from
+        components
+        of real addresses/phone numbers/urls. Each phrase that we are tasked to decipher is in a parquet file that
+        contains hundreds of thousands of rows of data points. Each row has 1,600 values representing body landmarks
+        normalized with MediaPipe pose detection. The row is derived from a still video frame where a signer would be
+        gesturing. There is so much information for each phrase that each parquet file representing it is over a
+        gigabyte each.
+
+        </p>
+        <div class="image-container">
+          <img src="images/parquet_structure.png" alt="explaining parquet file structure" style="width: 900px;">
+        </div>
+        </li>
+
+        <p></p>
+
+        <p>The phrases include addresses, phone numbers, and urls. Each phrase that we are tasked to decipher is in its
+          own parquet file that contains hundreds of thousands of rows of data points. Each row has 1,629 values
+          representing 543 landmarks normalized with MediaPipe pose detection. There is so much information for each
+          phrase that each parquet file representing it is over a gigabyte each.</p>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="procedure" class="statsSection section">
+    <div class="container">
+      <div class="row">
+        <div class="heading">
+          <h2>Procedure</h2>
+        </div>
+        <p>We completed the training process of the transformer model in the following steps:</p>
+        <ol>
+          <h5>Step 1: Preprocessing the data</h5>
+          <ul>
+            <li><em>Feature extraction:</em> With fingerspelling, not all of the given coordinates are relevant. We
+              omitted the landmark data related to the face and only the pose (body) landmark data related to the arms.
+              We only extracted the dominant hand as only one hand is used in fingerspellling. This reduced the features
+              from 543 to 78.</li>
+            <li>We took took the labels for the data and the data itself an consolidated them into a TFRecord format.
+              This facilitates the caching and fetching of data batches later on during training.</li>
+            <li>Each character is mapped to an integer value, e.g. "a" is mapped to 32. We introduced characters to mark
+              the start of a phrase, end of a phrase, and padding at the end of the phrase ('<', '>' , and 'P' ,
+                respectively). Our final alphabet contains sixty-two key-value pairs, which will be the amount of
+                classes the final algorithm will classify.</li>
+          </ul>
+          <p><br></p>
+          <h5>Step 2: Splitting the data set for training, validation and test</h5>
+          <div class="image-container">
+            <img src="images/data_split.png" alt="" style="width: 800;">
+          </div>
+
+          <p></p>
+
+          <p>We split the dataset into three subsets: train, validation, and test. It then efficiently processes the
+            data in batches of size sixty-four using TensorFlow's TFRecordDataset. Each subset is decoded, converted,
+            batched, and prefetched to optimize training performance. The resulting datasets are cached in memory to
+            speed up access during training.<br><br></p>
+
+
+          <h5>Step 3 Model architecture</h5>
+          <ul>
+            <li>We defined our Long Short-Term Memory (LSTM) neural network model using Keras.</li>
+            <li>We defined a few variables that are important in determining the shape of the input/output layers. The
+              number of classes in the output layer is the number of unique characters in the data set, i.e. 62
+              characters. Each batch of the input data has the shape ( batch_size, frame_len, num_features).</li>
+            <li>We then created a sequential model, which is a linear stack of layers in Keras. The first layer is an
+              LSTM layer with 75 units. We will use another LSTM layer to act as the encoder layer, i.e. reading the
+              input sequence and encode it to a fixed-length sequence. RepeatVector layers were added as an adapter
+              since the subsequent LSTM layer requires a 3D input, but the output of the previous LSTM layer is 2D. The
+              second LSTM layer has 50 units. This LSTM model serves as a decoder layer, i.e. decoding a fixed length
+              vector and outputting a predicted sequence. The next layer is a TimeDistributed layer, which applies a
+              fully connected (Dense) layer with a softmax activation to each time step of the sequence. We have some
+              issues with matching the number of frames in the predicted output and the number of frames in the target
+              (128 vs 64). Therefore, we decided to apply to the output of the previous layer a downsizing operation via
+              a Lambda layer. This operation downsamples by halving the sequence length (::2) while keeping the same
+              number of features.</li>
+            <li>The model is then compiled with the categorical cross-entropy loss function, the Adam optimizer, and the
+              accuracy metric for evaluation during training.</li>
+            <li>The overall architecture is a sequence-to-sequence model with two LSTM layers, followed by a
+              TimeDistributed dense layer for multi-class classification, and a custom downsampling step before
+              training.</li>
+          </ul>
+          <div class="image-container">
+            <img src="images/model_summary.png" alt="" style="width: 450;">
+          </div>
+          <p><br></p>
+          <h5>Step 4: Model training and inference</h5>
+          <ul>
+            <p>The model is then trained with the fit method using the training dataset (train_ds) and validated on the
+              validation dataset (valid_ds) through 20 epochs. Also, we added a custom callback called DisplayOutputs is
+              used to display model outputs during training. DisplayOutputs essentially converts the tensor numeric
+              representation into textual phrases.</p>
+          </ul>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  </div>
+
+
+  <div id="results" class="skillsSection section">
+    <div class="container">
+      <div class="row">
+        <div class="heading">
+          <h2>Results</h2>
+        </div>
+        <div class="container">
+
+          <p>We noticed that while many of the phrases did not seem close, when we we were pleasantly surprised when we
+            examine the individual letters, many of the hand shapes were reasonably close. For example, it
+            might confuse a “5” and a “W”, when the only difference is the pinky is straight or bent. (The handshape
+            for “five” is how you would expect — five fingers extended.)</p>
+
+          <p>The model seems to be able to distinguish between alphabetic characters versus numeric characters. It was
+            also able to predict the sequence length fairly accurately. While it currently is not accurate enough to
+            translate most of the phrase, it is accurate enough to see what kind of information is being displayed, such
+            as distinguishing between a phone number and a URL.</p>
+
+          <p>Our Model has limited functionality now and opportunity to improve. Below are samples of our results
+            showing the model's predictions and truth values for twenty epochs.</p>
+
+          </p>
+
+        </div>
+
+        <div class="itemsContainer">
+          <ul class="items">
+            <li class="element-item col-xs-6 col-sm-6 col-md-4 col-lg-4 apps" data-category="prediction">
+              <div class="item">
+                <img src="images/example_prediction.png" alt="">
+                <div class="icons">
+                  <a href="images/example_prediction.png" title="View Image" class="openButton" data-fancybox
+                    data-caption="When manually comparing the outputs, some errors seem reasonable
+                      Some hand shapes are similar, such as “5” and “W”
+                      Some are identical, such as “6” and “W”
+                      It is fairly consistent distinguishing between alphabetic and numeric characters
+                      We can accurately classify types of sequences such as phone numbers and URLs
+                      ">
+                    <i class="fa fa-search"></i>
+                  </a>
+                </div>
+
+                <div class="imageOverlay"></div>
+              </div>
+            </li>
+
+            <li class="element-item col-xs-6 col-sm-6 col-md-4 col-lg-6 me" data-category=".prediction">
+              <div class="item">
+                <img src="images/ml-project-results-2.png" alt="">
+                <div class="icons">
+                  <a href="images/ml-project-results-2.png" title="View Image" class="openButton" data-fancybox
+                    data-caption="Print out of the first section of our results.">
+                    <i class="fa fa-search"></i>
+                  </a>
+                </div>
+                <div class="imageOverlay"></div>
+              </div>
+            </li>
+
+            <li class="element-item col-xs-6 col-sm-6 col-md-4 col-lg-4 websites" data-category=".loss">
+              <div class="item">
+                <img src="images/loss_results.png" alt="">
+                <div class="icons">
+                  <a href="images/loss_results.png" title="View Image" class="openButton" data-fancybox data-caption="The losses for both training data set and validation data set decreased over 20 epochs. The finally losses are below 1.0.
+                      This means the model is able to learn and improve over time">
+                    <i class="fa fa-search"></i>
+                  </a>
+                </div>
+                <div class="imageOverlay"></div>
+
+              </div>
+            </li>
+
+            <li class="element-item col-xs-6 col-sm-6 col-md-4 col-lg-6 me" data-category=".accuracy">
+              <div class="item">
+                <img src="images/accuracy_result.png" alt="">
+                <div class="icons">
+                  <a href="images/accuracy_result.png" title="View Image" class="openButton" data-fancybox
+                    data-caption="The accuracies increased over 20 epochs, ended up at above 75%. This means the model is able to learn and improve.
+                      The accuracy for the training set is slightly higher than the accuracy for the validation set, meaning the model is slightly overfitting">
+                    <i class="fa fa-search"></i>
+                  </a>
+                </div>
+
+                <div class="imageOverlay"></div>
+
+
+              </div>
+            </li>
+
+          </ul>
+        </div>
+        <p style="text-align:center;"><em>Selected output from our model, the model's loss and accuracy over 20
+            epoch.</em></p>
+      </div>
+    </div>
+  </div>
+
+  <div id="challenges" class="statsSection section">
+    <div class="container">
+      <div class="row">
+        <div class="heading">
+          <h2>Challenges</h2>
+        </div>
+
+
+        <h5>Preprocessing</h5>
+        <p>The phrases and input sequences are of variable length, which is hard for the LSTM model to handle. We
+          decided to preprocess the target labels used as input to include padding, start pointer, and end pointer
+          characters and turn this problem into a Sequence to Sequence (seq2seq) LSTM solution.</p>
+
+        <h5>Dealing with such a large data set</h5>
+        <p>The vast size of the dataset (i.e. 189GB) made it impossible to load it all into memory during training. To overcome
+          this, we used mini-batch training with sixty-four training examples for each batch.</p>
+
+        <h5>Kaggle Limitations</h5>
+        <p>To overcome the storage issue of downloading the entire dataset onto our personal computers, we used Kaggle
+          notebooks, which had some limitations. Namely, the notebook would not cache the session and automatically
+          deactivate idle sessions, which made it time consuming to rerun.</p>
+
+        <p>Also, sharing our notebooks with one another was incredibly difficult on this platform. The site does not
+          utilize git, so we were forced to constantly fork each other's notebooks, manually copying over code from
+          other versions.</p>
+
+        <h5>Sequence to Sequence Learning</h5>
+        <p>To translate sign language to text, we used sequence to sequence learning, which is used to output sequences
+          of varying lengths, something normally used in NLP language translation problems. In a sequence to sequence
+          model the neural network consists of an encoding layer which takes the input and processes it, and the
+          decoding layer which takes in the output from the encoding layer and generates the output
+          sequence-by-sequence. Transformer models usually have superior performance and training time.</p>
+
+        <p>However, we wanted to approach the problem in way not already attempted in the competition, so we used a Long
+          Short Term Memory Model (LSTM). While not as sophisticated as a Transformer, it is not affected by vanishing
+          or exploding gradients like 'vanilla' RNN. However it does have some disadvantages in relation to
+          transformers. The encoder-decoder architecture of LSTMs requires sequential computation, leading to slower
+          training and inference times, especially for longer sequences.</p>
+
+        <p>Also, the “attention mechanisms” present in Transformer models allow the model to focus on specific parts of
+          the input sequence while generating each element of the output sequence. LSTMs lack this built-in attention
+          mechanism, meaning they may not be as effective at selectively attending to relevant parts of the input during
+          decoding.</p>
+
+        <h5>Levenshtein Distance</h5>
+        <p>Levenshtein Distance is a metric used to quantify the difference or similarity between two strings by
+          measuring the minimum number of "edit operations" needed to transform one string to another.While the
+          calculation of the Levenshtein distance from two strings or from two tensors are straightforward, applying the
+          Levenshtein distance as a custom metric in a Keras API proves challenging.</p>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="future" class="skillsSection section">
+    <div class="container">
+      <div class="row">
+        <div class="heading">
+          <h2>Future Work</h2>
+        </div>
+        <p>One of the most important aspects that we fell short with was getting the Levenshtien Metric to work with our
+          model. This would have allowed a much higher accuracy rate, improving our model overall.</p>
+
+        <p>We also feel that a more complicated architecture, perhaps one with more layers, would help us create a
+          better model and increase performance. We were able to create the model in the end, but we didn’t have the
+          time to tweak and perfect it.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="conclusion" class="statsSection section">
+    <div class="container">
+      <div class="row">
+        <div class="heading">
+          <h2>Conclusion</h2>
+        </div>
+
+        <p>
+          Overall we were successful in understanding this sophisticated data set and preprocessing the input to be
+          applied into an LTSM model. In addition, the model is able to recognition some patterns such as the length
+          of the signed phrase, letters or numbers, etc. The model also seems to perform equally on the training set
+          and the validation set with negligible overfitting. Last but not least, we learned how to handle a large and
+          rich data set using tf.data.TFRecordDataset batching and caching pipeline.
+        </p>
+
+        <p>
+          On the other hand, the model still has some major issues that did not meet the original use cases we
+          proposed, i.e. to translate ASL hand and pose coordinates to meaningful English phrases, e.g. "3 creekhouse."
+          Nevertheless, the model may be repurposed for use cases such as classifying whether the signs convey an
+          alphabetic character or a number or a phone number or url. Also, since the model is confused between similar
+          signs such as 5 and w, we believe with more data and more sophisticated architecture, it will be able to
+          make more accurate predictions.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="team" class="skillsSection section">
+    <div class="container">
+      <div class="row">
+        <div class="heading">
+          <h2>Team</h2>
+        </div>
+        <div class="row"></div>
+        <div class="col col-md-6 col-lg-3">Minh-Hang Radetsky</div>
+        <div class="col col-md-6 col-lg-3">Sam Bryan</div>
+        <div class="col col-md-6 col-lg-3">Adish Jain</div>
+        <div class="col col-md-6 col-lg-3">Sireesha Bachu</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="references" class="statsSection section">
+    <div class="container">
+      <div class="row">
+        <div class="heading">
+          <h2>References</h2>
+        </div>
+        <p>The ASL fingerspelling data set can be found at the Kaggle competition</p>
+        <ul>
+          <li>
+            <a href="https://www.kaggle.com/c/asl-fingerspelling">Google - American Sign Language Fingerspelling Recognition</a>
+          </li>
+        </ul>
+
+        <p>Although the model we built upon was our own design, we learned a lot from the following Kaggle
+          contributer's notebook. They especially helped with the preprocessing.</p>
+        <ul>
+          <li><a href="https://www.kaggle.com/code/gusthema/asl-fingerspelling-recognition-w-tensorflow">ASL
+              Fingerspelling Recognition w/ TensorFlow</a></li>
+        </ul>
+        <p>In addition, the following was very useful to reference:</p>
+        <ul>
+          <li>Brownlee, Jason. <em>Long Short-Term Memory Networks With Python: Develop Sequence Prediction Models
+              With Deep Learning</em>. v1.0 ed., Machine Learning Mastery, 2017.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="copyrightSection">
+    <div class="col-md-12 text-center">
+      <p>&copy; Gompei Ninjas 2023</p>
+    </div>
+  </div>
+
+
+
+  <script src="js/script.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.easypiechart.min.js"></script>
+
+  <script src="js/countUp.js"></script>
+  <script src="js/countUp-jquery.js"></script>
+
+  <script src="js/jquery.superslides.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+
+  <!-- Load typed.js from CDN -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+
+  <!-- for fancy box -->
+  <!-- JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+</body>
+
+</html>
